@@ -848,6 +848,7 @@ net.ipv4.ipfrag_high_thresh = 8388608
 ### Account for a high RTT lossy network
 # Enable selective acknowledgments 
 net.ipv4.tcp_sack = 1
+net.ipv4.tcp_fack = 1
 
 # Allows TCP to send "duplicate" SACKs
 net.ipv4.tcp_dsack = 1
@@ -916,7 +917,7 @@ net.ipv4.tcp_fin_timeout=10
 ### Miscellaneous
 # Enable TCP Fast Open
 # TCP Fast Open (TFO) is an extension to speed up the opening of successive TCP connections between two endpoints
-net.ipv4.tcp_fastopen = 3
+net.ipv4.tcp_fastopen = 0
 net.ipv4.tcp_fastopen_blackhole_timeout_sec = 0
 
 # The maximum amount of unsent bytes in TCP socket write queue, this is on top of the congestion window
